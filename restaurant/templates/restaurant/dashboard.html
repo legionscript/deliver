@@ -28,6 +28,7 @@
                             <th scope="col">State</th>
                             <th scope="col">Zip Code</th>
                             <th scope="col">Is Paid?</th>
+                            <th scope="col">Details</th>
                         </tr>
                     </thead>
 
@@ -50,6 +51,7 @@
                                 {% endif %}
 
                             </td>
+                            <td><a href="{% url 'order-details' order.pk %}"><i class="far fa-edit"></i></a></td>
                         </tr>
                         {% endfor %}
                     </tbody>
