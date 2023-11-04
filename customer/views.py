@@ -50,8 +50,8 @@ class Order(View):
 
             order_items['items'].append(item_data)
 
-            price = 0
-            item_ids = []
+        price = 0
+        item_ids = []
 
         for item in order_items['items']:
             price += item['price']
